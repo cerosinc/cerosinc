@@ -144,7 +144,6 @@ body {
 .gallery a>video {
   border-radius: 2px;
   width: 100%;
-  background-image: url(../img/loading.gif);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center;
