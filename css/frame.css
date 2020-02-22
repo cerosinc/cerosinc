@@ -26,6 +26,7 @@ body {
 
 .landing > img {
   height: 30em;
+  max-width: 100%;
 }
 
 .content-container {
