@@ -1,0 +1,185 @@
+/*************************************************************************
+ * GitHub: https://github.com/yenchiah/project-website-template
+ * Version: v3.25
+ * This CSS file is for the website frame
+ * If you want to keep this template updated, avoid modifying this file
+ * Instead, add your own CSS in the index.css
+ *************************************************************************/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+.landing {
+  text-align: center;
+  /* padding: 2em 0; */
+  /* height: 30em; */
+  background: linear-gradient(0deg, rgba(101,122,227,1) 0%, rgba(108,230,218,1) 100%);
+}
+
+.landing > img {
+  height: 30em;
+}
+
+.content-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+}
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 900px;
+  overflow-x: scroll;
+}
+
+.bottom {
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-item-stretch {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-2 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-3 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-4 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-5 {
+  flex: 1 auto;
+}
+
+.flex-item {
+  margin: 0 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.gallery a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gallery a>img,
+.gallery a>video {
+  border-radius: 2px;
+  width: 100%;
+  background-image: url(../img/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  min-height: 50px;
+}
+
+.gallery a>div {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .gallery a {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .gallery a {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .gallery a {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery a {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
